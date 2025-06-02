@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  background: #18181b;
+  color: #f5f5f5;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.main-container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header {
+  padding: 2.5rem 0 1rem 0;
+  text-align: center;
+  background: #27272a;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.3rem;
+  color: #22d3ee;
+  margin: 0.5rem 0 0 0;
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #22d3ee;
+  margin-bottom: 0.7rem;
+}
+
+.experience-list,
+.skills-list,
+.projects-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-list li {
+  margin-bottom: 1.1rem;
+  font-size: 1.1rem;
+}
+
+.skill-chip {
+  display: inline-block;
+  background: #27272a;
+  color: #22d3ee;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem 0.5rem 0.3rem 0;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+@media (min-width: 700px) {
+  .projects-list {
+    grid-template-columns: 1fr 1fr;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.project-card {
+  background: #27272a;
+  border-radius: 14px;
+  padding: 1.2rem 1rem;
+  box-shadow: 0 4px 18px #0002;
+  display: flex;
+  flex-direction: column;
+  min-height: 170px;
+}
+
+.project-card h3 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.18rem;
+  color: #f5f5f5;
+}
+
+.project-card p {
+  color: #bcbcbc;
+  flex: 1;
+}
+
+.project-card a {
+  color: #22d3ee;
+  text-decoration: none;
+  margin-top: 0.7rem;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+.contact-links a {
+  color: #22d3ee;
+  text-decoration: underline;
+  margin-right: 1.3rem;
+  font-size: 1.08rem;
+}
+
+footer {
+  background: #27272a;
+  text-align: center;
+  color: #bcbcbc;
+  padding: 1.2rem 0 0.8rem 0;
+  margin-top: auto;
+  font-size: 1rem;
+  letter-spacing: 1px;
 }

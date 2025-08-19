@@ -1,17 +1,39 @@
 function About() {
     return (
-      <section>
+      <section id="about" className="about">
         <h2>About Me</h2>
-        <p>
-        I am a results-driven and detail-oriented Software Development Engineer in Test (SDET) with over 7 years of experience designing, developing, and implementing robust automation frameworks to enhance software quality and operational efficiency. My expertise spans both automated and manual testing, specializing in functional, performance, and API testing across web and mobile applications. I have extensive experience with leading testing tools such as Selenium, Cypress, Playwright, Appium, and Postman, ensuring seamless integration within Agile teams and CI/CD environments. 
-        
-        <p>Throughout my career, I have consistently improved test coverage, reduced defect rates, and enhanced overall product reliability.
-
-I've had the opportunity to collaborate with industry leaders like US Bank, PayPal, and CVS Health, successfully developing and maintaining automated test suites, integrating comprehensive tests into CI/CD pipelines, and partnering effectively with cross-functional teams. My technical skill set includes proficiency in Java, JavaScript, SQL, and DevOps tools such as Jenkins and Docker, complemented by practical experience with cloud platforms like AWS, GCP, and Azure.
-
-I am passionate about driving innovation in test automation and committed to delivering reliable, high-performing software solutions.
-</p>
-        </p>
+        <div className="about-content">
+          <p>
+            I'm a passionate <strong>Spring Boot Developer</strong> with 3+ years of experience 
+            building scalable, robust backend systems and RESTful APIs. My expertise lies in 
+            developing enterprise-level applications using the Spring ecosystem, microservices 
+            architecture, and modern development practices.
+          </p>
+          
+          <p>
+            I specialize in creating high-performance backend solutions using Spring Boot, Spring Security, 
+            and Spring Data JPA. My experience includes working with both relational and NoSQL databases, 
+            implementing comprehensive security measures, API design, and optimizing application performance 
+            for production environments.
+          </p>
+          
+          <p>
+            Currently focused on cloud-native development, containerization with Docker, implementing 
+            microservices patterns, and building CI/CD pipelines for seamless deployment processes. 
+            I'm committed to writing clean, maintainable code and following industry best practices.
+          </p>
+          
+          <div className="highlights">
+            <h3>Key Achievements</h3>
+            <ul>
+              <li>Developed and deployed 15+ production-ready Spring Boot applications</li>
+              <li>Implemented microservices architecture reducing system response time by 40%</li>
+              <li>Built comprehensive REST APIs serving 100k+ daily requests</li>
+              <li>Optimized database queries resulting in 60% performance improvement</li>
+              <li>Led migration of monolithic applications to cloud-native microservices</li>
+            </ul>
+          </div>
+        </div>
       </section>
     );
   }
